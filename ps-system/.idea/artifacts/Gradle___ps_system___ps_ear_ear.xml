@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="ear" name="Gradle : ps-system : ps-ear.ear">
+    <output-path>$PROJECT_DIR$/ps-ear/build/libs</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$" />
+    </properties>
+    <root id="archive" name="ps-ear.ear">
+      <element id="artifact" artifact-name="Gradle : ps-system : ps-ear.ear (exploded)" />
+    </root>
+  </artifact>
+</component>

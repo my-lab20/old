@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : ps-system : ps-web.war (exploded)">
+    <output-path>$PROJECT_DIR$/ps-web/build/libs/exploded/ps-web.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$">
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQpJbXBsZW1lbnRhdGlvbi1UaXRsZTogcHMtd2ViLndhcg0KSW1wbGVtZW50YXRpb24tVmVyc2lvbjogMS4wLjANCg0K</manifest>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/ps-web/build/libs/exploded/ps-web.war/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="ps-system.ps-web.main/web/Web Gradle : ps-web.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ps-system.ps-web.main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/ps-web/build/resources/main" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

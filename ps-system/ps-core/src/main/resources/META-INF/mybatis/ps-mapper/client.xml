@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.uit.ps.dao.ClientDAO">
+	<resultMap id="clientMap" type="Client" >
+		<id property="id" column="id" />
+		<result property="account" column="account"  />
+		<result property="lastName" column="lastName" />
+		<result property="firstName" column="firstName" />
+		<result property="middleName" column="middleName" />
+		<result property="address" column="address" />
+		<collection property="payments" javaType="ArrayList" ofType="Payment" column="id" foreignColumn="CLIENT_ID">
+    		<id property="id" column="payment_id"/>
+    		<result property="payeeName" column="payeeName"/>
+    		<result property="personalAcc" column="personalAcc"/>
+    		<result property="bankName" column="bankName"/>
+    		<result property="bic" column="bic"/>
+    		<result property="correspAcc" column="correspAcc"/>
+    		<result property="sum" column="sum"/>
+    		<result property="purpose" column="purpose"/>
+    		<result property="payeeINN" column="payeeINN"/>
+    		<result property="payerINN" column="payerINN"/>
+    		<result property="drawerStatus" column="drawerStatus"/>
+    		<result property="kpp" column="kpp"/>
+    		<result property="cbc" column="cbc"/>
+    		<result property="oktmo" column="oktmo"/>
+    		<result property="taxPeriod" column="taxPeriod"/>
+    		<result property="taxPaytkind" column="taxPaytkind"/>
+  		</collection>
+	</resultMap>   
+
+	<select id="getClientByAccount" resultMap="clientMap" parameterType="String">
+		SELECT "C"."ID" AS id, 
+		"C"."ACCOUNT" AS account, 
+		"C"."LAST_NAME" AS lastName, 
+		"C"."FIRST_NAME" AS firstName, 
+		"C"."MIDDLE_NAME" AS middleName,
+		"C"."ADDRESS" AS address,
+		"P"."ID" as payment_id,
+		"P"."PAYEE_NAME" as payeeName,
+		"P"."PERSONAL_ACC" as personalAcc,
+		"P"."BANK_NAME" as bankName,
+		"P"."BIC" as bic,
+		"P"."CORRESP_ACC" as correspAcc,
+		"P"."SUM" as sum,
+		"P"."PURPOSE" as purpose,
+		"P"."PAYEE_INN" as payeeINN,
+		"P"."PAYER_INN" as payerINN,
+		"P"."DRAWER_STATUS" as drawerStatus,
+		"P"."KPP" as kpp,
+		"P"."CBC" as cbc,
+		"P"."OKTMO" as oktmo,
+		"P"."TAX_PERIOD" as taxPeriod,
+		"P"."TAX_PAYMENT_KIND" as taxPaytkind,
+		"P"."CLIENT_ID" as CLIENT_ID
+		FROM "PS"."CLIENT" "C"
+		LEFT JOIN "PS"."PAYMENT" "P" ON "P"."CLIENT_ID"="C"."ID"
+		WHERE "C"."ACCOUNT"=#{account}
+	</select>
+</mapper>

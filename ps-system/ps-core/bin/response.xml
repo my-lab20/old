@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<response><params><err_code>{0}</err_code><err_text>{1}</err_text><account>{2}</account><client_name>{3}</client_name><balance>{4}</balance></params><sign>{5}</sign></response>

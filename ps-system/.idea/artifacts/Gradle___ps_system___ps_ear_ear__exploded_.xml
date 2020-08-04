@@ -1,0 +1,44 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="Gradle : ps-system : ps-ear.ear (exploded)">
+    <output-path>$PROJECT_DIR$/ps-ear/build/libs/exploded/ps-ear.ear</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$">
+        <files>
+          <file path="$PROJECT_DIR$/ps-ear/build/libs/exploded/ps-ear.ear/META-INF/application.xml" value="PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8YXBwbGljYXRpb24geG1sbnM9Imh0dHA6Ly9qYXZhLnN1bi5jb20veG1sL25zL2phdmFlZSINCiAgICAgICAgICAgICB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly9qYXZhLnN1bi5jb20veG1sL25zL2phdmFlZSBodHRwOi8vamF2YS5zdW4uY29tL3htbC9ucy9qYXZhZWUvYXBwbGljYXRpb25fNS54c2QiDQogICAgICAgICAgICAgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgdmVyc2lvbj0iNSI+DQogICAgPGRpc3BsYXktbmFtZT5wczwvZGlzcGxheS1uYW1lPg0KICAgIDxtb2R1bGU+DQogICAgICAgIDx3ZWI+DQogICAgICAgICAgICA8d2ViLXVyaT5wcy13ZWIud2FyPC93ZWItdXJpPg0KICAgICAgICAgICAgPGNvbnRleHQtcm9vdD5wczwvY29udGV4dC1yb290Pg0KICAgICAgICA8L3dlYj4NCiAgICA8L21vZHVsZT4NCiAgICA8bGlicmFyeS1kaXJlY3Rvcnk+bGliPC9saWJyYXJ5LWRpcmVjdG9yeT4NCjwvYXBwbGljYXRpb24+DQo=" />
+        </files>
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQpJbXBsZW1lbnRhdGlvbi1UaXRsZTogDQpJbXBsZW1lbnRhdGlvbi1WZXJzaW9uOiAxLjAuMA0KDQo=</manifest>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/ps-ear/build/libs/exploded/ps-ear.ear/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="ps-system.ps-ear.main/javaeeApplication/JavaEE Application Gradle : ps-ear.ear" />
+      <element id="dir-copy" path="$PROJECT_DIR$/ps-ear/src/application" />
+      <element id="directory" name="ps-web.war">
+        <element id="artifact" artifact-name="Gradle : ps-system : ps-web.war (exploded)" />
+      </element>
+      <element id="directory" name="lib">
+        <element id="archive" name="ps-system-ps-core-1.0.0.jar">
+          <element id="module-output" name="ps-system.ps-core.main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/ps-core/build/resources/main" />
+        </element>
+        <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis-spring/1.2.3/18f0297b83960f280bacd68e87f9d374813e099e/mybatis-spring-1.2.3.jar" />
+        <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mybatis/mybatis/3.3.0/7c0e3582a1518b6d8e4e37ce2fc49b7bb6f2040f/mybatis-3.3.0.jar" />
+        <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.0.9.RELEASE/13015a0ff2a9bed4686a0f1d8d85a2ae57034e3a/spring-context-4.0.9.RELEASE.jar" />
+        <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context-support/4.0.9.RELEASE/e446313c92026293805aa814815a8adbbdb5d292/spring-context-support-4.0.9.RELEASE.jar" />
+        <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/4.0.9.RELEASE/f87123bee107245acef66491bfa4f359777f43e1/spring-orm-4.0.9.RELEASE.jar" />
+        <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.0.9.RELEASE/44122b1e0e833a22a9476db84649fbee28ba588f/spring-webmvc-4.0.9.RELEASE.jar" />
+        <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.0.9.RELEASE/f1a538c0ba95442ccf9a5e897d9a9895a637c539/spring-aop-4.0.9.RELEASE.jar" />
+        <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.0.9.RELEASE/256abd04e9c25f84ef98b18e4b89051b8ec68ba2/spring-expression-4.0.9.RELEASE.jar" />
+        <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" />
+        <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.0.9.RELEASE/295ecbf61e2313b4472947a1b3084022ba09e524/spring-beans-4.0.9.RELEASE.jar" />
+        <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.0.9.RELEASE/a7aea1dd2c5cde050d2d62833ec397d899a00854/spring-core-4.0.9.RELEASE.jar" />
+        <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar" />
+        <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/4.0.9.RELEASE/1ca870ddad757eb4c90accdecd64a68aa449f77e/spring-jdbc-4.0.9.RELEASE.jar" />
+        <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/4.0.9.RELEASE/5cac23b59532ffc19a3b2b6f4b59b84d16443132/spring-tx-4.0.9.RELEASE.jar" />
+        <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.0.9.RELEASE/eacab4077490a94eb0d8e24bedc457bced1c19b3/spring-web-4.0.9.RELEASE.jar" />
+      </element>
+    </root>
+  </artifact>
+</component>

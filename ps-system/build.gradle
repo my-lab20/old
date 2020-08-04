@@ -1,0 +1,27 @@
+ subprojects{
+	apply plugin: 'java'
+	apply plugin: 'eclipse'
+
+	sourceCompatibility = 1.6
+	targetCompatibility = 1.6
+
+	version = '1.0.0'
+
+	repositories {
+		mavenCentral()
+	}
+
+	dependencies {
+		compile 'org.apache.logging.log4j:log4j-core:2.2'
+		compile 'org.apache.logging.log4j:log4j-api:2.2'
+	}
+
+	jar {
+		manifest {
+			attributes("Implementation-Title": "",
+			"Implementation-Version": version
+			)
+		}
+	}
+
+}

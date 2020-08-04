@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.uit.ps.dao.ParamDAO">
+	<resultMap id="paramMap" type="Param" >
+		<id column="id" property="id"  />
+		<result column="name" property="name" />
+		<result column="value" property="value" />
+	</resultMap>   
+
+	<select id="getParamValueByName" resultType="String" parameterType="String">
+		SELECT
+			"VALUE"     	
+		FROM
+			"PS"."PARAMS"
+		WHERE
+			"NAME" like #{name}
+	</select>
+</mapper>

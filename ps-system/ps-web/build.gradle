@@ -1,0 +1,37 @@
+apply plugin: 'java'
+apply plugin: 'war'
+ 
+ dependencies {
+ 	 providedCompile project(':ps-core')
+	 providedCompile 'javax:javaee-api:6.0'
+	 providedCompile 'org.mybatis:mybatis-spring:1.2.3'
+	 providedCompile 'org.springframework:spring-context:4.0.9.RELEASE'
+	 providedCompile 'org.springframework:spring-context-support:4.0.9.RELEASE'
+	 providedCompile 'org.springframework:spring-orm:4.0.9.RELEASE'
+	 providedCompile 'org.springframework:spring-webmvc:4.0.9.RELEASE'
+	 providedCompile 'org.springframework:spring-tx:4.0.9.RELEASE'
+	 
+ }
+ 
+ war {
+	 from 'WebContent'
+	 
+	 manifest {
+		 attributes('Implementation-Title': 'ps-web.war',
+					'Implementation-Version': version
+					)
+	 }
+	 
+	 archiveName 'ps-web.war'
+ }
+ 
+ sourceSets {
+	 main {
+		 java {
+			 srcDir 'src/main/java'
+			 }
+		resources {
+			srcDir 'src/main/resources'
+		}
+	 }
+ }

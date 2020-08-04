@@ -1,0 +1,41 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+	
+dependencies {
+	 compile 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
+	 compile 'org.springframework:spring-context:4.0.9.RELEASE'
+	 compile 'org.springframework:spring-context-support:4.0.9.RELEASE'
+	 compile 'org.springframework:spring-orm:4.0.9.RELEASE'
+	 compile 'org.springframework:spring-webmvc:4.0.9.RELEASE'
+	 compile 'org.springframework:spring-tx:4.0.9.RELEASE'
+ }
+ 
+sourceSets {
+	 main {
+		 java {
+			 srcDir 'src/main/java'
+			 }
+		resources {
+			srcDir 'src/main/resources'
+		}
+	 }
+	 
+	 test {
+    	java {
+        	srcDir 'test/main/java'
+    	}
+    	resources {
+        	srcDir 'test/main/resources'
+    	}
+	}
+ }
+
+jar {
+	manifest {
+		attributes('Implementation-Title': 'ps-core.jar',
+				   'Implementation-Version': version
+				   )
+	}
+	
+	archiveName 'ps-core.jar'
+}

@@ -1,0 +1,5 @@
+#org.springsource.ide.eclipse.gradle.core.preferences.GradleProjectPreferences
+#Tue Aug 18 08:49:04 MSK 2015
+build.family.org.gradle.tooling.model.eclipse.HierarchicalEclipseProject=;ps-core;ps-ear;ps-web;
+org.springsource.ide.eclipse.gradle.linkedresources=
+org.springsource.ide.eclipse.gradle.rootprojectloc=

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ps-system.iml" filepath="$PROJECT_DIR$/ps-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ps-core/ps-system.ps-core.iml" filepath="$PROJECT_DIR$/.idea/modules/ps-core/ps-system.ps-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ps-core/ps-system.ps-core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ps-core/ps-system.ps-core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ps-core/ps-system.ps-core.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ps-core/ps-system.ps-core.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ps-ear/ps-system.ps-ear.iml" filepath="$PROJECT_DIR$/.idea/modules/ps-ear/ps-system.ps-ear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ps-ear/ps-system.ps-ear.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ps-ear/ps-system.ps-ear.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ps-ear/ps-system.ps-ear.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ps-ear/ps-system.ps-ear.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ps-web/ps-system.ps-web.iml" filepath="$PROJECT_DIR$/.idea/modules/ps-web/ps-system.ps-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ps-web/ps-system.ps-web.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ps-web/ps-system.ps-web.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ps-web/ps-system.ps-web.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ps-web/ps-system.ps-web.test.iml" />
+    </modules>
+  </component>
+</project>
